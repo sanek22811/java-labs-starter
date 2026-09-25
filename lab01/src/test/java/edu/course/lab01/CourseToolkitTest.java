@@ -9,8 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CourseToolkitTest {
 
-    // --- Тесты isEven (включая подготовительную часть) ---
-
     @Test
     void returnsTrueForEvenNumber() {
         boolean result = CourseToolkit.isEven(8);
@@ -32,8 +30,6 @@ class CourseToolkitTest {
     void returnsTrueForNegativeEvenNumber() {
         assertTrue(CourseToolkit.isEven(-8));
     }
-
-    // --- Тесты isPrime ---
 
     @Test
     void isPrimeReturnsFalseForNumbersLessThanTwo() {
@@ -62,8 +58,6 @@ class CourseToolkitTest {
         assertFalse(CourseToolkit.isPrime(121));
     }
 
-    // --- Тесты isPalindrome ---
-
     @Test
     void isPalindromeReturnsTrueForValidPalindromes() {
         assertTrue(CourseToolkit.isPalindrome(""));
@@ -83,8 +77,6 @@ class CourseToolkitTest {
     void isPalindromeThrowsExceptionOnNull() {
         assertThrows(IllegalArgumentException.class, () -> CourseToolkit.isPalindrome(null));
     }
-
-    // --- Тесты average ---
 
     @Test
     void averageCalculatesCorrectValueForPositiveNumbers() {
