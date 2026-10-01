@@ -20,4 +20,9 @@ class CourseToolkitTest {
 
         assertFalse(result);
     }
+
+    @Test
+    void shouldReturnTrueWhenNumberIsZero() {
+        assertTrue(CourseToolkit.isEven(0));
+    }
 }
